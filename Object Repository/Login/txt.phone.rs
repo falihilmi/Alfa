@@ -3,8 +3,9 @@
    <description></description>
    <name>txt.phone</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>72886bbe-8236-40a2-9f6b-86e19c4303ad</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <locator>//*(text)=&quot;phone&quot;</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -42,7 +42,6 @@ public class Login {
 	def inputCredential(String phone, String password) {
 		WebUI.setText(findTestObject('Object Repository/Login/txt.phone'), phone )
 		WebUI.setText(findTestObject('Object Repository/Login/txt.password'), password)
-		
 	}
 
 	@And("click button login")
@@ -52,13 +51,13 @@ public class Login {
 
 	@Then("I navigated home alfagift Verify (.*) Account")
 	def validateFormPageAfterLogin(String expectedUser) {
-		String getTextCurrent = WebUI.getText(findTestObject('Object Repository/Home/getUserAccount'))
-		key.compareValue(getTextCurrent, expectedUser)
 		
-		//Check Coachmark
+		//Check Popup
 		if(Mobile.verifyElementVisible(findTestObject('Object Repository/Home/PopUpPromo'), 2)){
 			Mobile.tap(findTestObject('Object Repository/Home/ClosePopUpPromo'),5)
 		}
+		String getTextCurrent = WebUI.getText(findTestObject('Object Repository/Home/getUserAccount'))
+		key.compareValue(getTextCurrent, expectedUser)
 	}
 	
 	@And("logout account")
@@ -99,5 +98,26 @@ public class Login {
 
 	}
 	
+	@When("not input field phone and password")
+	def notInputField(){
+		WebUI.click(findTestObject('Object Repository/Login/btn.Submit'))
+	}
+	
+	
+	@Then("I see error login username and password invalid")
+	def checkMandatoryField(){
+		if(Mobile.verifyElementVisible(findTestObject('Object Repository/Login/err.InvalidPassword'), 0)) {
+			KeywordUtil.markPassed("Passed, error is show expected")
+		}
+		if(Mobile.verifyElementVisible(findTestObject('Object Repository/Login/err.phonenumberinvalid'), 0)) {
+			KeywordUtil.markPassed("Passed, error is show expected")
+		}
+		else {
+			KeywordUtil.markFailed("Failed, error handling not show")
+		}
+		
+	}
+	
+
 }
 

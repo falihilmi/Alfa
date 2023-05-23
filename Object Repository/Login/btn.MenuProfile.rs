@@ -3,8 +3,9 @@
    <description></description>
    <name>btn.MenuProfile</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>0f816440-f21d-42b1-ae60-5d84b7128dba</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <locator>//*(text)=&quot;profile&quot;</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

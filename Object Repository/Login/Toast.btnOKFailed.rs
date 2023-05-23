@@ -3,8 +3,9 @@
    <description></description>
    <name>Toast.btnOKFailed</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>94aea906-41f1-4999-8a84-6ef352190651</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <locator>//*(text)=&quot;close&quot;</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

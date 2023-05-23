@@ -3,8 +3,9 @@
    <description></description>
    <name>err.InvalidPassword</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>c0db8566-6906-4583-a2da-895fd2aa01cc</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <locator>//*(text)=&quot;account atau password salah&quot;</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
