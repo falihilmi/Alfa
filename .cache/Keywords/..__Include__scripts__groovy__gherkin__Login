@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "AF86C30C83EBB705AB70178970F79DFE",
+  "keywordClasses": [
+    {
+      "name": "gherkin.Login",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": false
+}
